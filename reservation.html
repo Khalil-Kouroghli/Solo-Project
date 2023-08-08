@@ -8,29 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="reservation.css" >
     <script src="jQuary.js"></script>
-    <title>Document</title>
+    <title>reservation</title>
 </head>
 <body>
 
-
+    <!-- plane -->
     <div class="cloud cloud1">
         <div class="light"></div>
       <img  src="https://images.vexels.com/media/users/3/145795/isolated/preview/05cd33059a006bf49006097af4ccba98-plane-in-flight-by-vexels.png" /></div
-
-
-
-
-
-
-
-
-    
-    
     <div class="test"></div>
 
-<div  class="container" >
-    
 
+
+<!-- trip type -->
+<div  class="container" >
 <div class="rad" >
 <input type="radio" value="" name="check"  checked id="depcheck" >
 <label> one/way  </label>
@@ -39,23 +30,21 @@
 </div>
 
 
-
+<!-- input arrive and depature -->
 <div class="inputs">
 <input type="text"  placeholder="departure" id="depart" >
 <input type="text"  placeholder="arrivee" id="arrivee">
 </div>
 
-
-
+<!-- date -->
 <div class="date">
 <input type="date" id="datdep" >
 <label> depart </label>
-
 <input style="display: none;" type="date" class="depart" > 
 <label style="display: none;" class="depart">arrive</label>
 </div>
 
-
+<!-- economic or firstclass type of trip -->
 <div class="classe">
 <select id="myselect">
 <!-- <select placeholder="class"> -->
@@ -64,9 +53,9 @@
 <option>firstclass</option>
 </select>
 </div>
-<div class="choices" >
-   
 
+<!-- choices of countrie -->
+<div class="choices" >
     <select  >
         <option>catalog</option>
         <option>tunis--->france</option>
@@ -83,16 +72,18 @@
 
 
 
-
+<!-- button search -->
 <div class="btn" >
-
-
 <button type="submit" id="button" > Search  </button>
-
 </div>
+
+
+<!-- where the image gonna be -->
 </div>
 <div class="carcont" >
 </div>
+
+
 <script src="reservation.js" ></script>
 </body>
 </html>

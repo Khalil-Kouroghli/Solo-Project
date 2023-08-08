@@ -1,5 +1,6 @@
-var travels=[
 
+// coutries
+var travels=[
         {
             image :"img/fr.jpeg",
             depart :  "Tunis"   ,
@@ -147,11 +148,14 @@ var travels=[
 ]
 
 
-
+//when you want a round trip date 
 $("#arrcheck").on("click",function(){  
 $(".depart").css("display","block")
 $(".date").css("display","flex")
 })
+
+// after choosing and click on the search button
+
 $("#depcheck").on("click",function(){  
     $(".depart").hide()
 })
@@ -166,10 +170,12 @@ $("#button").on("click",function(){
  return  depart.toLowerCase()===element.depart.toLowerCase() && arrive.toLowerCase()===element.arrivee.toLowerCase() &&select===element.class
 
 })
+//store the date of the trip 
 localStorage.setItem("item",filtred)
 console.log(localStorage.setItem("item",JSON.stringify(filtred)));
 console.log(filtred)
 for (var key in filtred){
+    //if only one date 
     if(datearr===""){
 $(".carcont").append(
     `<div class="card ">
@@ -181,6 +187,7 @@ $(".carcont").append(
     <p> date : ${datedep} </p>
 </div>`
 )}else {
+    //round trip
     $(".carcont").append(
         `<div class="card ">
         <img src="${filtred[key].image}" >
@@ -196,48 +203,19 @@ $(".carcont").append(
 if (filtred.length===0){
     alert("not found")
 }
-
+//one search 
 $("#depart").val("")   
  $("#arrivee").val("")
  $("#myselect").val("")
  $("#datdep").val("")
  $(".depart").val("")
 })
-
+//when you pick your choice you go to the acceuil page
 $(".carcont").on("click",function(){
     $(location).attr("href","acceuil.html")
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//functions you need
 function each (coll,f){
     if(Array.isArray(coll)){
         for (var i = 0; i < coll.length; i++){

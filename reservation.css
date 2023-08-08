@@ -1,7 +1,7 @@
 *{
     font-family: 'Edu SA Beginner', cursive;
 }
-
+/* the background animation */
 body{
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -19,15 +19,14 @@ body{
 		background-position: 0% 50%;
 	}
 }
-.carcont{
 
+/* the card container where the image is gonna be */
+.carcont{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
-    
 }
-
+/* the card image */
 .card{
     font-size: 25px;
     background-color: #eee;
@@ -39,19 +38,21 @@ body{
     border-radius: 10px;
     transition-duration: 0.7s;
 }
+/* when you hover on the image */
 .card:hover{
     transform:scale(1.1);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
+/* the image width */
 .card img{
     width: 100%;
    
 }
+/* the card paragraph */
 .card p{
     margin: 5px;
-    
-   
 }
+/* the container  */
 .container{
     display: flex;
     flex-direction: column;
@@ -66,10 +67,9 @@ body{
     /* transform: translate(-50%,-50%); */
 }
 .container label{
-
     font-size: 30px;
 }
-
+/* the inputs of container */
 .container input{
 color: red;
 font-size: 25px;
@@ -80,9 +80,12 @@ border-radius: 7px;
 outline: none;
 border: none;
 }
+/* the button search */
 .btn{
 text-align: right;
 }
+/* the button search */
+
 #button{
 font-size: 30px;
 padding: 7px;
@@ -92,6 +95,8 @@ color: white;
 border-radius: 7px;
 border: none;
 }
+/* the button search hover */
+
 #button:hover{
 background-color: rgb(127, 161, 255);
 }
@@ -102,11 +107,10 @@ border-radius: 7px;
 outline: none;
 border: none;
 }
+/* card pos */
+
 .test{
-
 min-height: 70vh;
-
-
 }
 
 
